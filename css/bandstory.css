@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/* brandstory-visual */
+#brandstory-visual {
+    width: 100%;
+    height: 200px;
+    background: url(../img/brandstory/brandstory-visual.png);
+}
+
+/* section common */
+
+section .inner {
+    position: relative;
+}
+
+section h3 {
+    font-size: 5rem;
+    color: #002F6C;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+section .txt h2 {
+    font-size: 3.2rem;
+}
+
+section .txt p {
+    margin-top: 60px;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+section .txt p strong {
+    font-size: 24px;
+    color: #002F6C;
+}
+
+section .txt p strong span {
+    position: relative;
+}
+
+section .txt p strong span::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: #FFAB00;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+section .txt p strong span em {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ch1 */
+
+#ch1 .inner {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 100px;
+}
+
+#ch1 .ch1-image .img-1 {
+    width: 500px;
+    height: 320px;
+    background: url(../img/brandstory/ch1-1.png) no-repeat center/ cover;
+    margin-bottom: 30px;
+}
+
+#ch1 .ch1-image .img-2 {
+    width: 500px;
+    height: 320px;
+    background: url(../img/brandstory/ch1-2.png) no-repeat center/ cover;
+}
+
+#ch1 .txt h2 {
+    margin-top: 100px
+}
+
+/* ch2 */
+
+#ch2 .txt h2 {
+    margin-top: 50px
+}
+
+#ch2 .inner {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 100px;
+}
+
+#ch2 .ch2-image {
+    width: 500px;
+    height: 650px;
+    background: url(../img/brandstory/ch2.png) no-repeat center/ cover
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    height: 430px;
+    background: url(../img/brandstory/banner.png) no-repeat center/ cover;
+    margin: 100px 0;
+}
+
+/* ch3 */
+
+#ch3 .ch3-txt {
+    text-align: center;
+}
+
+#ch3 .ch3-txt h4 {
+    font-size: 3.2rem;
+}
+
+#ch3 .ch3-txt p {
+    margin-top: 50px;
+    font-size: 1.8rem;
+}
+ 
+
+
+#ch3 .ch3-img{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#ch3 .ch3-img img{
+    display: block;
+}
+
+#ch3 .ch3-img .roasting{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+#ch3 .ch3-img .roasting p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 20px;
+}
+
+#ch3 .ch3-img  .point{
+    width: 70%;
+    height: 50px;
+    background: url(../img/brandstory/ch3-2.png) no-repeat center ;
+}
+
+#ch3  ul > li {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#ch3  ul  li  h5{
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+    
+}
+
+#ch3  ul > li > ul{
+    display: flex;
+justify-content: space-between;
+width: 80%;
+} 
+
+#ch3  ul > li > ul > li{
+width: 125px;
+height: 20px;
+background-color: #FFAB00;
+}
+
+
+
+  .container {
+    margin: 150px auto;
+    width: 700px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* 원 사이의 간격 */
+  }
+
+  .circle-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    opacity: 0; /* 초기에는 보이지 않도록 설정 */
+    transition: opacity 0.5s ease; /* 애니메이션 부드럽게 보이도록 설정 */
+  }
+
+  .circle-bottom {
+    width: 120px;
+    height: 120px;
+    background-color: #0053BE;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+
+  svg {
+    transform: rotate(-90deg); /* 12시 방향부터 시작하도록 회전 */
+  }
+
+  .center-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 10; /* 숫자가 원 위에 표시되도록 설정 */
+  }
+.container .circle-wrap p{
+    color: #002F6C;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* ch4 */
+#ch4 .inner {
+    margin-top: 300px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#ch4 .inner .ch4-img {
+    text-align: center;
+}
+
+#ch4 .inner .ch4-txt {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+
+#ch4 .inner .ch4-txt li {
+    width: calc(1000px / 3);
+    background: #002F6C;
+    height: 160px;
+    padding: 10px;
+    border-radius: 0 25px 0 0;
+}
+
+#ch4 .inner .ch4-txt li h6 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#ch4 .inner .ch4-txt li>div {
+    margin-left: 10px;
+    display: flex;
+    gap: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+
+}
